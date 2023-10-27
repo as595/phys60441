@@ -1,2 +1,2 @@
-# phys60441
+# PHYS60441 - Radio Interferometry
 Material for PHYS60441
