@@ -11,6 +11,6 @@ In this lecture we will focus on the first of these: non-coplanarity, otherwise 
 
 The structure of the lecture will be,
 
-(i) an overview of the w-effect,
-(ii) various solutions to the w-effect, and
-(iii) worked examples.
+- an overview of the w-effect,
+- various solutions to the w-effect, and
+- worked examples.
