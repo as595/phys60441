@@ -1,8 +1,8 @@
 # Site settings
-title: "How to Fit a Straight Line"
+title: "PHYS60441: W-Projection Lecture"
 email: anna.scaife@manchester.ac.uk
-description: "Like the title says..."
-baseurl: "/straight-line"
+description: "Special lecture for PHYS60441 Radio Interferometry course"
+baseurl: "/phys60441"
 url: "http://as595.github.io"
 twitter_username: radastrat
 github_username:  as595
