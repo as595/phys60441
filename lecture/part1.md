@@ -61,3 +61,40 @@ $$\phi(l,m,w).$$
 Effectively every visibility with a different $w$-value sees a different sky - and, since the $w$-value changes as a function of time, the measured sky is time-variable. 
 
 Consequently, if we ignore the $w$-term and do a 2d Fourier transform then we will see image distortions. 
+
+#### Why are the sources distorted like that?
+
+The distortions that we see have a quite characteristic shape, like a double "U". This is a consequence of $w$ not truly being independent of $(u,v)$. In fact we can write $W$ as:
+
+$$w = u \sin \chi \tan Z − v \cos \chi \tan Z,$$
+
+where
+
+ - $\chi$ is the *parallactic angle*, and
+ - $Z$ is the *zenith angle*.
+
+These angles are defined by the relationship between the local coordinate frame and the celestial coordinate frame and can be defined as:
+
+$$ \tan \chi = \frac{\sin H}{\cos \delta \tan \phi - \tan \delta \cos H},$$
+$$ \cos Z = \sin \phi \sin \delta + \cos \phi \cos \delta \cos H,$$
+
+where
+
+ - $H$ is the local *Hour Angle* of the celestial source,
+ - $\delta$ is the declination of the celestial source, and
+ - $\phi$ is the latitude of the telescope on the Earth.
+
+Using the expression $w = u \sin \chi \tan Z − v \cos \chi \tan Z$, we can re-write the visibility equation as
+
+$$
+V(u,v) = \int{\frac{I(l,m)}{\sqrt{1-l^2-m^2}} {\rm e}^{j 2\pi [ul' + vm']}~{\rm d}l{\rm d}m},
+$$
+
+where
+
+$$
+l′=l+\sin \chi \tan Z ( 1−l^2−m^2−1)
+$$
+$$
+m′=m−\cos \chi \tan Z ( 1−l^2−m^2−1)
+$$
