@@ -1,7 +1,6 @@
 ---
 layout: page
 mathjax: true
-permalink: /lecture/part1/
 ---
 
 <h3 id="wide-field-imaging"> Wide-field Imaging </h3>
