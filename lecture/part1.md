@@ -4,8 +4,7 @@ mathjax: true
 permalink: /lecture/part1/
 ---
 
-<a name="intro"></a>
-#### Wide-field Imaging
+#### <a href="#introduction"> Wide-field Imaging </a>
 
 There are multiple effects that become important when making very wide-field interferometric images: non-coplanarity, primary beam rotation, direction-dependent phase calibration...
 
