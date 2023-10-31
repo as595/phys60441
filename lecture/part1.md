@@ -66,8 +66,6 @@ Consequently, if we ignore the $w$-term and do a 2d Fourier transform then we wi
 
 The distortions that we see have a quite characteristic shape, like a double "U". This is a consequence of $w$ not truly being independent of $(u,v)$. In fact we can write $W$ as:
 
-$$w = u \sin \chi \tan Z − v \cos \chi \tan Z,$$
-
 $$
 w = u \sin \chi \tan Z - v \cos \chi \tan Z,
 $$
