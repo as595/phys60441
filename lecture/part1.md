@@ -57,3 +57,7 @@ We can see that $w$ is only used in the exponent, which means that ${\rm e}^{j 2
 However, the phase is *position-dependent*:
 
 $$\phi(l,m,w).$$
+
+Effectively every visibility with a different $w$-value sees a different sky - and, since the $w$-value changes as a function of time, the measured sky is time-variable. 
+
+Consequently, if we ignore the $w$-term and do a 2d Fourier transform then we will see image distortions. 
