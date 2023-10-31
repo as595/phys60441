@@ -1,6 +1,7 @@
 ---
 layout: page
 mathjax: true
+permalink: /lecture/intro/
 ---
 
 #### Wide-field Imaging
