@@ -27,9 +27,9 @@ $$
 
 where
 
- - $(l,m)$ are the direction cosines relative to the phase centre;
- - $I(l,m)$ is the spectral intensity at position $(l,m)$;
- - $(u, v, w)$ is the vector between the two interferometer elements expressed in units of wavelength.
+ - $$(l,m)$$ are the direction cosines relative to the phase centre;
+ - $$I(l,m)$$ is the spectral intensity at position $(l,m)$;
+ - $$(u, v, w)$$ is the vector between the two interferometer elements expressed in units of wavelength.
 
 This is more often referred to as the *visibility equaton*.
 
