@@ -68,6 +68,10 @@ The distortions that we see have a quite characteristic shape, like a double "U"
 
 $$w = u \sin \chi \tan Z − v \cos \chi \tan Z,$$
 
+$$
+w = u \sin \chi \tan Z - v \cos \chi \tan Z,
+$$
+
 where
 
  - $\chi$ is the *parallactic angle*, and
