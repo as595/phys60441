@@ -3,6 +3,7 @@ layout: page
 mathjax: true
 permalink: /lecture/main
 ---
+{%- include mathjax.html -%}
 
 <h3 id="wide-field-imaging"> Wide-field Imaging </h3>
 
