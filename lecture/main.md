@@ -1,7 +1,7 @@
 ---
 layout: page
 mathjax: true
-permalink: /lecture/main
+permalink: /phys60441/lecture/main
 ---
 
 
