@@ -42,3 +42,19 @@ $$
 which is just a 2d Fourier transform. 
 
 However if $w(\sqrt{1-l^2-m^2}-1) \ge 1$ then we can't use a 2d Fourier transform without suffering from aberration effects. 
+
+#### The w-effect
+
+So what happens if we do use a 2d transform?
+
+Let's look at the visibility equation again, but separating the w-term in the exponent:
+
+$$
+V(u,v,w) = \int{\frac{I(l,m)}{\sqrt{1-l^2-m^2}} {\rm e}^{j 2\pi [ul + vm]} {\rm e}^{j 2\pi w(\sqrt{1-l^2-m^2}-1)}~{\rm d}l{\rm d}m}.
+$$
+
+We can see that $w$ is only used in the exponent, which means that ${\rm e}^{j 2\pi w(\sqrt{1-l^2-m^2}-1)}$ is purely a phase term, i.e. ${\rm e}^{j \phi}$.
+
+However, the phase is *position-dependent*:
+
+$$\phi(l,m,w).$$
