@@ -95,9 +95,9 @@ $$
 where
 
 $$
-l′=l+\sin \chi \tan Z ( 1−l^2−m^2−1)
+l′=l+\sin \chi \tan Z ( \sqrt{1−l^2−m^2} −1)
 $$
 
 $$
-m′=m−\cos \chi \tan Z ( 1−l^2−m^2−1)
+m′=m−\cos \chi \tan Z ( \sqrt{1−l^2−m^2} −1)
 $$
