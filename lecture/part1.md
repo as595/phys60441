@@ -21,7 +21,7 @@ The structure of the lecture will be,
 The spatial coherence function measured by a radio interferometer is related to the spectral intensity as,
 
 $$
-V(u,v,w) = \int{\frac{I(l,m)}{\sqrt{1-l^2-m^2}} {\rm e}^{j 2\pi [ul + vm + w(\sqrt{1-l^2-m^2}-1)]}\,{\rm d}l{\rm d}m},
+V(u,v,w) = \int{\frac{I(l,m)}{\sqrt{1-l^2-m^2}} {\rm e}^{j 2\pi [ul + vm + w(\sqrt{1-l^2-m^2}-1)]}~{\rm d}l{\rm d}m},
 $$
 
 where
@@ -35,7 +35,7 @@ This is more often referred to as the *visibility equaton*.
 The $w$-term in this equation is the final part of the exponent: $w(\sqrt{1-l^2-m^2}-1)$. In the case where $w(\sqrt{1-l^2-m^2}-1) \ll 1$ then we can ignore it completely and the visibility equation becomes:
 
 $$
-V(u,v) = \int{\frac{I(l,m)}{\sqrt{1-l^2-m^2}} {\rm e}^{j 2\pi [ul + vm]}\,{\rm d}l{\rm d}m},
+V(u,v) = \int{\frac{I(l,m)}{\sqrt{1-l^2-m^2}} {\rm e}^{j 2\pi [ul + vm]}~{\rm d}l{\rm d}m},
 $$
 
 which is just a 2d Fourier transform. 
