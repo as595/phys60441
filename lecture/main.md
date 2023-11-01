@@ -79,13 +79,14 @@ where
 These angles are defined by the relationship between the local coordinate frame and the celestial coordinate frame and can be defined as:
 
 $$ \tan \chi = \frac{\sin H}{\cos \delta \tan \phi - \tan \delta \cos H},$$
+
 $$ \cos Z = \sin \phi \sin \delta + \cos \phi \cos \delta \cos H,$$
 
 where
 
  - $H$ is the local *Hour Angle* of the celestial source,
- - $\delta$ is the declination of the celestial source, and
- - $\phi$ is the latitude of the telescope on the Earth.
+ - $\delta$ is the *declination* of the celestial source, and
+ - $\phi$ is the *latitude* of the telescope on the Earth.
 
 Using the expression $w = u \sin \chi \tan Z − v \cos \chi \tan Z$, we can re-write the visibility equation as
 
@@ -100,5 +101,25 @@ l′=l+\sin \chi \tan Z ( \sqrt{1−l^2−m^2} −1)
 $$
 
 $$
-m′=m−\cos \chi \tan Z ( \sqrt{1−l^2−m^2} −1)
+m′=m−\cos \chi \tan Z ( \sqrt{1−l^2−m^2} −1).
 $$
+
+The coordinates $(l', m')$ are a warped version of $(l, m)$.
+
+If we plot $(l', m')$ as a function of $H$ and $\delta$, we can see that the values follow conic sections. The values of $(l', m')$ scale quadratically with distance from the phase centre, $r = \sqrt{l^2 + m^2}$, which means that sources further away move more. 
+
+
+### So how do we fix it?
+
+Here we'll discuss three different ways to correct the $w$-effect:
+
+ - 3-d Fourier transforms,
+ - the $w$-projection method,
+ - facetting.
+
+#### 3d Fourier transform
+
+If you take the 3d Fourier tranform of $V(u, v, w)$, then you recover $I(l, m, n)$, where the only non-zero values lie on a 2d surface with $n = \sqrt{1 - l^2 - m^2}$. We could do this, i.e. we could FFT in $(u,v)$ and then DFT in $(w)$, but... we’d end up with a cube where the $n$-direction was almost completely zero-valued [Cornwell, Golap & Bhatnagar - EVLA Memo 67](https://library.nrao.edu/public/memos/evla/EVLAM_67.pdf).
+
+Also, we do not have complete sampling in $(u,v,w)$ - so $I(l,m,n)$ will be convolved with a dirty beam in 3 dimensions [Waldram & McGilchrist, 1990, MNRAS, 245, 532](https://articles.adsabs.harvard.edu/pdf/1990MNRAS.245..532W).
+
