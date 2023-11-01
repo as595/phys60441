@@ -2,8 +2,8 @@
 title: "PHYS60441: Radio Interferometry"
 email: anna.scaife@manchester.ac.uk
 description: "Special lecture for PHYS60441 Radio Interferometry course"
-baseurl: ""
-url: "http://as595.github.io/phys60441"
+baseurl: "/phys60441"
+url: "http://as595.github.io"
 twitter_username: radastrat
 github_username:  as595
 
