@@ -111,7 +111,7 @@ If we plot $(l', m')$ as a function of $H$ and $\delta$, we can see that the val
 
 ### So how do we fix it?
 
-Here we'll discuss three different ways to correct the $w$-effect:
+Here we'll discuss four different ways to correct the $w$-effect:
 
  - 3-d Fourier transforms,
  - the $w$-projection method,
@@ -128,7 +128,7 @@ Also, we do not have complete sampling in $(u,v,w)$ - so $I(l,m,n)$ will be conv
 
 See [Waldram & McGilchrist, 1990, MNRAS, 245, 532](https://articles.adsabs.harvard.edu/pdf/1990MNRAS.245..532W).
 
-#### $w$-projection
+#### w-projection
 
 IF we write the visibility equation like this
 
@@ -169,7 +169,7 @@ where
 
 As $w$ increases, the size of the $w$-kernel also increases. Performing the convolution operation gets more expensive as the kernel gets larger, so CASA will look at the available memory on your computer and limit the size (“support”) of your $w$-kernels.
 
-#### $w$-snapshots
+#### w-snapshots
 
 Since we know that for each time step (integration time) the $w$-term simpy warps our $(l,m)$ coordinate frame into $(l',m')$, then it is possible to make an image for each time step and re-project the coordinates from $(l',m') \rightarrow (l,m)$ since we know $Z$ and $\chi$. We can then stack, i.e. add-up, all of the re-projected images to form one combined image. This approach is referred to as $w$-snapshots, since we are stacking snapshot images. 
 
