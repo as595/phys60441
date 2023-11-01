@@ -115,11 +115,75 @@ Here we'll discuss three different ways to correct the $w$-effect:
 
  - 3-d Fourier transforms,
  - the $w$-projection method,
+ - the $w$-snapshots method,
  - facetting.
 
 #### 3d Fourier transform
 
-If you take the 3d Fourier tranform of $V(u, v, w)$, then you recover $I(l, m, n)$, where the only non-zero values lie on a 2d surface with $n = \sqrt{1 - l^2 - m^2}$. We could do this, i.e. we could FFT in $(u,v)$ and then DFT in $(w)$, but... we’d end up with a cube where the $n$-direction was almost completely zero-valued [Cornwell, Golap & Bhatnagar - EVLA Memo 67](https://library.nrao.edu/public/memos/evla/EVLAM_67.pdf).
+If you take the 3d Fourier tranform of $V(u, v, w)$, then you recover $I(l, m, n)$, where the only non-zero values lie on a 2d surface with $n = \sqrt{1 - l^2 - m^2}$. We could do this, i.e. we could FFT in $(u,v)$ and then DFT in $(w)$, but... we’d end up with a cube where the $n$-direction was almost completely zero-valued.
 
-Also, we do not have complete sampling in $(u,v,w)$ - so $I(l,m,n)$ will be convolved with a dirty beam in 3 dimensions [Waldram & McGilchrist, 1990, MNRAS, 245, 532](https://articles.adsabs.harvard.edu/pdf/1990MNRAS.245..532W).
+See [Cornwell, Golap & Bhatnagar - EVLA Memo 67](https://library.nrao.edu/public/memos/evla/EVLAM_67.pdf).
+
+Also, we do not have complete sampling in $(u,v,w)$ - so $I(l,m,n)$ will be convolved with a dirty beam in 3 dimensions. 
+
+See [Waldram & McGilchrist, 1990, MNRAS, 245, 532](https://articles.adsabs.harvard.edu/pdf/1990MNRAS.245..532W).
+
+#### $w$-projection
+
+IF we write the visibility equation like this
+
+$$
+V(u,v,w) = \int{\frac{I(l,m)}{\sqrt{1-l^2-m^2}} {\rm e}^{j 2\pi [ul + vm]} {\rm e}^{j 2\pi w(\sqrt{1-l^2-m^2}-1)}~{\rm d}l{\rm d}m}.
+$$
+
+then we can see that the $w$-term is a multiplicative function, i.e.
+
+$$
+V(u,v,w) = \int{\frac{I(l,m)}{\sqrt{1-l^2-m^2}} {\rm e}^{j 2\pi [ul + vm]} G(l, m, w)~{\rm d}l{\rm d}m}.
+$$
+
+Consequently we can also use the convolution theorem to write this as a convolution in the visibility domain:
+
+$$
+V(u,v,w) = V(u, v, w=0) \ast \tilde{G}(u, v, w),
+$$
+
+where $\tilde{G}(u, v, w)$ is the Fourier tranform of $G(l, m, w)$ and is known as the $w$-kernel.
+
+Mathematically this means that the visibility for non-zero $w$ can be calculated from the visibility for $w=0$, which is the same as projecting $V(u, v, w=0) \rightarrow V(u, v, w)$. Hence this method is known as $w$-projection.
+
+For making an image from visibilities we need to go the other way - from visibility data to images. In this case we need to project $V(u, v, w) \rightarrow V(u, v, w=0)$ in order to use the 2d Fourier transform. To do this we convolve $V(u,v,w)$ with the inverse of $G(u,v,w)$, which conveniently is just $G(u,v,-w)$.
+
+In practice most w-projection implementations do not calculate a w-kernel for every individual visibility. Typically the visibility data is ordered in increasing $w$-value and then divided into a number of $w$-planes. A kernel is then created for each plane, with a $w$-value that represents the mean $w$-position within that plane. The larger the number of $w$-planes, the more accurate the imaging will be - but also the more computationally expensive it will be...
+
+If you are using CASA, the default number of w-planes is calculated using:
+
+$$
+N_w = B_{\rm max}(k\lambda) \Omega({\rm arcmin^2})/600,
+$$
+
+where 
+
+ - $B_{\rm max}$ is the maximum baseline length in units of kilo-$\lambda$, and
+ - $\Omega$ is the field-of-view in units of square-arcminutes.
+
+As $w$ increases, the size of the $w$-kernel also increases. Performing the convolution operation gets more expensive as the kernel gets larger, so CASA will look at the available memory on your computer and limit the size (“support”) of your $w$-kernels.
+
+#### $w$-snapshots
+
+Since we know that for each time step (integration time) the $w$-term simpy warps our $(l,m)$ coordinate frame into $(l',m')$, then it is possible to make an image for each time step and re-project the coordinates from $(l',m') \rightarrow (l,m)$ since we know $Z$ and $\chi$. We can then stack, i.e. add-up, all of the re-projected images to form one combined image. This approach is referred to as $w$-snapshots, since we are stacking snapshot images. 
+
+#### facetting
+
+Alternatively, rather than break the data up into time steps, we can instead break the sky image up into pieces - called facets - where each facet is small enough that $l^2 + m^2 \rightarrow 0$ and hence $w(\sqrt{1-l^2-m^2}-1) \ll 1$. We can then make a mosaic of all the individual images in order to recreate the full field-of-view. This approach is known as facetting. 
+
+### Summary
+
+ - Non-coplanarity introduces an additional phase term into the visibility equation. This is time and direction variable.
+ - The effect of this phase term is to smear sources in a systematic manner. This smearing is a function of distance from the phase centre with sources further away being more distorted.
+ - Equivalently we can think of this phase term as warping the co-ordinate system on a snapshot by snapshot basis.
+ - To correct for this effect we can use
+  (i) $w$-projection, which re-poses the phase multiplication as a convolution in visibility space, or
+  (ii) $w$-snapshots, which re-projects the image plane for each snapshot and then stacks the images, or
+  (iii) use faceting.
 
