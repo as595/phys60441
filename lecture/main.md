@@ -171,11 +171,15 @@ As $w$ increases, the size of the $w$-kernel also increases. Performing the conv
 
 #### w-snapshots
 
-Since we know that for each time step (integration time) the $w$-term simpy warps our $(l,m)$ coordinate frame into $(l',m')$, then it is possible to make an image for each time step and re-project the coordinates from $(l',m') \rightarrow (l,m)$ since we know $Z$ and $\chi$. We can then stack, i.e. add-up, all of the re-projected images to form one combined image. This approach is referred to as $w$-snapshots, since we are stacking snapshot images. 
+Since we know that for each time step (integration time) the $w$-term simpy warps our $(l,m)$ coordinate frame into $(l',m')$, then it is possible to make an image for each time step and re-project the coordinates from $(l',m') \rightarrow (l,m)$ since we know $Z$ and $\chi$. 
+
+We can then stack, i.e. add-up, all of the re-projected images to form one combined image. This approach is referred to as $w$-snapshots, since we are stacking snapshot images. 
 
 #### facetting
 
-Alternatively, rather than break the data up into time steps, we can instead break the sky image up into pieces - called facets - where each facet is small enough that $l^2 + m^2 \rightarrow 0$ and hence $w(\sqrt{1-l^2-m^2}-1) \ll 1$. We can then make a mosaic of all the individual images in order to recreate the full field-of-view. This approach is known as facetting. 
+Alternatively, rather than break the data up into time steps, we can instead break the sky image up into pieces - called facets - where each facet is small enough that $l^2 + m^2 \rightarrow 0$ and hence $w(\sqrt{1-l^2-m^2}-1) \ll 1$. 
+
+We can then make a mosaic of all the individual images in order to recreate the full field-of-view. This approach is known as facetting. 
 
 ### Summary
 
