@@ -11,11 +11,12 @@ There are multiple effects that become important when making very wide-field int
 
 In this lecture we will focus on the first of these: non-coplanarity, otherwise known as the w-effect.
 
-The structure of the lecture will be,
+The term *non-coplanarity* can refer to either: 
 
-- an overview of the w-effect,
-- various solutions to the w-effect, and
-- worked examples.
+1. the fact that we are imaging a field-of-view that is so wide it can no longer be described by a local planar appoximation to the celestial sphere; or, 
+2. the fact that the antennas in our array have a significant "vertical" offset from the projected *uv* plane.
+  
+In both cases this is a form of non-coplanarity and it contributes to the $w$-term in the visibility equation becoming non-negligible.
 
 #### The w-term
 
