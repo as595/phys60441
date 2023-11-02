@@ -17,7 +17,7 @@ The structure of the lecture will be,
 - various solutions to the w-effect, and
 - worked examples.
 
-#### Visibility Equation
+#### The w-term
 
 The spatial coherence function measured by a radio interferometer is related to the spectral intensity as,
 
