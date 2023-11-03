@@ -32,7 +32,7 @@ where
  - $I(l,m)$ is the spectral intensity at position $(l,m)$;
  - $(u, v, w)$ is the vector between the two interferometer elements expressed in units of wavelength.
 
-This is more often referred to as the *visibility equaton*.
+This is more often referred to as the *visibility equation*.
 
 See [Thomson, Moran & Swenson, Section 3.1](https://link.springer.com/book/10.1007/978-3-319-44431-4).
 
