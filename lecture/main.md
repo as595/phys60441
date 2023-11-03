@@ -34,7 +34,7 @@ where
 
 This is more often referred to as the *visibility equation*.
 
-See [Thomson, Moran & Swenson, Section 3.1](https://link.springer.com/book/10.1007/978-3-319-44431-4).
+* See [Thomson, Moran & Swenson, Section 3.1](https://link.springer.com/book/10.1007/978-3-319-44431-4).
 
 The $w$-term in this equation is the final part of the exponent: $w(\sqrt{1-l^2-m^2}-1)$. In the case where $w(\sqrt{1-l^2-m^2}-1) \ll 1$ then we can ignore it completely and the visibility equation becomes:
 
@@ -125,11 +125,11 @@ Here we'll discuss four different ways to correct the $w$-effect:
 
 If you take the 3d Fourier tranform of $V(u, v, w)$, then you recover $I(l, m, n)$, where the only non-zero values lie on a 2d surface with $n = \sqrt{1 - l^2 - m^2}$. We could do this, i.e. we could FFT in $(u,v)$ and then DFT in $(w)$, but... we’d end up with a cube where the $n$-direction was almost completely zero-valued.
 
-See [Cornwell, Golap & Bhatnagar - EVLA Memo 67](https://library.nrao.edu/public/memos/evla/EVLAM_67.pdf).
+* See [Cornwell, Golap & Bhatnagar - EVLA Memo 67](https://library.nrao.edu/public/memos/evla/EVLAM_67.pdf).
 
 Also, we do not have complete sampling in $(u,v,w)$ - so $I(l,m,n)$ will be convolved with a dirty beam in 3 dimensions. 
 
-See [Waldram & McGilchrist, 1990, MNRAS, 245, 532](https://articles.adsabs.harvard.edu/pdf/1990MNRAS.245..532W).
+* See [Waldram & McGilchrist, 1990, MNRAS, 245, 532](https://articles.adsabs.harvard.edu/pdf/1990MNRAS.245..532W).
 
 #### w-projection
 
