@@ -34,7 +34,7 @@ where
 
 This is more often referred to as the *visibility equaton*.
 
-See [Thomson, Moran & Swenson](https://link.springer.com/book/10.1007/978-3-319-44431-4).
+See [Thomson, Moran & Swenson, Section 3.1](https://link.springer.com/book/10.1007/978-3-319-44431-4).
 
 The $w$-term in this equation is the final part of the exponent: $w(\sqrt{1-l^2-m^2}-1)$. In the case where $w(\sqrt{1-l^2-m^2}-1) \ll 1$ then we can ignore it completely and the visibility equation becomes:
 
