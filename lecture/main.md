@@ -62,13 +62,13 @@ However, the phase is *position-dependent*:
 
 $$\phi(l,m,w).$$
 
-Effectively every visibility with a different $w$-value sees a different sky - and, since the $w$-value changes as a function of time, the measured sky is time-variable. 
+Effectively every visibility with a different $w$-value sees a different sky. And, since the $w$-value changes as a function of time, the measured sky is time-variable. 
 
 Consequently, if we ignore the $w$-term and do a 2d Fourier transform then we will see image distortions. 
 
 #### Why are the sources distorted like that?
 
-The distortions that we see have a quite characteristic shape, like a double "U". This is a consequence of $w$ not truly being independent of $(u,v)$. In fact we can write $W$ as:
+The distortions that we see have a quite characteristic shape, like a double "U". This is a consequence of $w$ not truly being independent of $(u,v)$. In fact we can write $w$ as:
 
 $$
 w = u \sin \chi \tan Z - v \cos \chi \tan Z,
