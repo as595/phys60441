@@ -178,6 +178,8 @@ Since we know that for each time step (integration time) the $w$-term simpy warp
 
 We can then stack, i.e. add-up, all of the re-projected images to form one combined image. This approach is referred to as $w$-snapshots, since we are stacking snapshot images. 
 
+* See [Cornwell, Voronkov & Humphreys 2012](https://arxiv.org/pdf/1207.5861.pdf)
+
 #### facetting
 
 Alternatively, rather than break the data up into time steps, we can instead break the sky image up into pieces - called facets - where each facet is small enough that $l^2 + m^2 \rightarrow 0$ and hence $w(\sqrt{1-l^2-m^2}-1) \ll 1$. 
