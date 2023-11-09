@@ -70,7 +70,7 @@ Effectively every visibility with a different $w$-value sees a different sky. An
 
 Consequently, if we ignore the $w$-term and do a 2d Fourier transform then we will see image distortions. 
 
-<img src="{{site.baseurl}}/lecture/figures/cutouts.png" width="800" height="450" />
+<img src="{{site.baseurl}}/lecture/figures/cutouts.png" width="800" height="450" alt="A figure showing the image distortions caused by the w-effect using simulated data for the VLA telescope"/>
 
 As we get further away from the centre of the field, the sources become more distorted. This is a consequence of the phase screen. The additional phase introduced to a visibility with $w$ at position $(l, m)$ in the image is given by:
 
@@ -123,13 +123,13 @@ $$
 
 If we plot the offset of $(l', m')$ from $(l, m)$ as a function of $H$ and $\delta$, we can see that the values follow conic sections, and the offsets scale quadratically with distance from the phase centre, $r = \sqrt{l^2 + m^2}$, which means that sources further away move more. 
 
-<img src="{{site.baseurl}}/lecture/figures/conic_sections.png" width="500" height="400" />
+<img src="{{site.baseurl}}/lecture/figures/conic_sections.png" width="500" height="400" class="center" alt="A figure showing the offset of positions in the warped coordinate frame as a function of hour angle and declination"/>
 
 * See the [Colab notebook used to make this figure.](https://colab.research.google.com/drive/1VuzOX6YrtHqgw8KR1KALhE4LmnvAI1TO?usp=sharing) 
 
 The result of this is that the coordinates $(l', m')$ are a *warped* version of $(l, m)$.
 
-<img src="{{site.baseurl}}/lecture/figures/warped.png" width="800" height="400" />
+<img src="{{site.baseurl}}/lecture/figures/warped.png" width="800" height="400" alt="A view of the Lovell telescope in both an unwarped and a warped coordinate frame"/>
 
 
 ### So how do we fix it?
