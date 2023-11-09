@@ -151,7 +151,7 @@ Here we'll discuss four different ways to correct the $w$-effect:
 
 If you take the 3d Fourier tranform of $V(u, v, w)$, then you recover $I(l, m, n)$, where the only non-zero values lie on a 2d surface with $n = \sqrt{1 - l^2 - m^2}$. 
 
-<center><img src="{{site.baseurl}}/lecture/figures/lmn.png" width="500" height="400" /></center>
+<center><img src="{{site.baseurl}}/lecture/figures/lmn.png" width="450" height="400" /></center>
 
 We could do this, i.e. we could FFT in $(u,v)$ and then DFT in $(w)$, but... we’d end up with a cube where the $n$-direction was almost completely zero-valued.
 
