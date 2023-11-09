@@ -184,6 +184,8 @@ $$
 
 where $\tilde{G}(u, v, w)$ is the Fourier tranform of $G(l, m, w)$ and is known as the $w$-kernel.
 
+<center><img src="{{site.baseurl}}/lecture/figures/kernel.png" width="800" height="400" /></center>
+
 Mathematically this means that the visibility for non-zero $w$ can be calculated from the visibility for $w=0$, which is the same as projecting $V(u, v, w=0) \rightarrow V(u, v, w)$. Hence this method is known as $w$-projection.
 
 For making an image from visibilities we need to go the other way - from visibility data to images. In this case we need to project $V(u, v, w) \rightarrow V(u, v, w=0)$ in order to use the 2d Fourier transform. To do this we convolve $V(u,v,w)$ with the inverse of $G(u,v,w)$, which conveniently is just $G(u,v,-w)$.
