@@ -119,18 +119,14 @@ $$
 
 If we plot the offset of $(l', m')$ from $(l, m)$ as a function of $H$ and $\delta$, we can see that the values follow conic sections, and the offsets scale quadratically with distance from the phase centre, $r = \sqrt{l^2 + m^2}$, which means that sources further away move more. 
 
-<p align="center">
-  <img src="https://github.com/as595/phys60441/blob/main/lecture/figures/conic_sections.png" />
-</p>
+![](./figures/conic_sections.png)
 
 * See the [Colab notebook used to make this figure.](https://colab.research.google.com/drive/1VuzOX6YrtHqgw8KR1KALhE4LmnvAI1TO?usp=sharing) 
 
 The result of this is that the coordinates $(l', m')$ are a *warped* version of $(l, m)$.
 
-<p align="center">
-  <img src="./figures/warped.png" />
-  <figcaption>Image credit: Chris Skipper</figcaption>
-</p>
+![Image credit: Chris Skipper](./figures/warped.png)
+
 
 ### So how do we fix it?
 
