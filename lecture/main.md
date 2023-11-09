@@ -62,7 +62,7 @@ However, the phase is *position-dependent*:
 
 $$\phi(l,m,w).$$
 
-<img src="{{site.baseurl}}/lecture/figures/phasescreen.png" width="400" height="400" />
+<center><img src="{{site.baseurl}}/lecture/figures/phasescreen.png" width="400" height="400" /></center>
 
 * See [Cornwell, Golap & Bhatnagar - EVLA Memo 67](https://library.nrao.edu/public/memos/evla/EVLAM_67.pdf).
 
