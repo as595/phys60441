@@ -5,7 +5,7 @@ permalink: phys60441/lecture/main
 ---
 
 
-<h3 id="wide-field-imaging"> Wide-field Imaging </h3>
+<h2 id="wide-field-imaging"> Wide-field Imaging </h3>
 
 There are multiple effects that become important when making very wide-field interferometric images: non-coplanarity, primary beam rotation, direction-dependent phase calibration...
 
@@ -18,7 +18,7 @@ The term *non-coplanarity* can refer to either:
   
 In both cases this is a form of non-coplanarity and it contributes to the $w$-term in the visibility equation becoming non-negligible.
 
-#### The w-term
+### The w-term
 
 The spatial coherence function measured by a radio interferometer is related to the spectral intensity as,
 
@@ -46,7 +46,7 @@ which is just a 2d Fourier transform.
 
 However if $w(\sqrt{1-l^2-m^2}-1) \ge 1$ then we can't use a 2d Fourier transform without suffering from aberration effects. 
 
-#### The w-effect
+### The w-effect
 
 So what happens if we do use a 2d transform?
 
@@ -82,7 +82,7 @@ $$
 
 
 
-#### Why are the sources distorted like that?
+### Why are the sources distorted like that?
 
 The distortions that we see have a quite characteristic shape, like a double "U". This is a consequence of $w$ not truly being independent of $(u,v)$. In fact we can write $w$ as:
 
