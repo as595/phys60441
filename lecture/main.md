@@ -66,13 +66,13 @@ The phase screen for a specific $w$-value is shown across a field-of-view in the
 
 <center><img src="{{site.baseurl}}/lecture/figures/phasescreen.png" width="400" height="400" /></center>
 
-* See [Cornwell, Golap & Bhatnagar - EVLA Memo 67](https://library.nrao.edu/public/memos/evla/EVLAM_67.pdf).
-
 The effect is that every visibility with a different $w$-value sees a different sky. And, since the $w$-value changes as a function of time, the measured sky is time-variable. 
 
 Consequently, if we ignore the $w$-term and do a 2d Fourier transform then we will see image distortions. 
 
 <img src="{{site.baseurl}}/lecture/figures/cutouts.png" width="800" height="450" alt="A figure showing the image distortions caused by the w-effect using simulated data for the VLA telescope"/>
+
+* Figure adapted from [Cornwell, Golap & Bhatnagar 2005](https://adsabs.harvard.edu/pdf/2005ASPC..347...86C).
 
 As we get further away from the centre of the field, the sources become more distorted. This is a consequence of the phase screen. The additional phase introduced to a visibility with $w$ at position $(l, m)$ in the image is given by:
 
