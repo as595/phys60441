@@ -125,7 +125,7 @@ If we plot the offset of $(l', m')$ from $(l, m)$ as a function of $H$ and $\del
 
 The result of this is that the coordinates $(l', m')$ are a *warped* version of $(l, m)$.
 
-<img src="{{site.baseurl}}/lecture/figures/warped.png" width="700" height="600" />
+<img src="{{site.baseurl}}/lecture/figures/warped.png" width="800" height="500" />
 
 
 ### So how do we fix it?
