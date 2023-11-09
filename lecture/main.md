@@ -66,13 +66,7 @@ Effectively every visibility with a different $w$-value sees a different sky. An
 
 Consequently, if we ignore the $w$-term and do a 2d Fourier transform then we will see image distortions. 
 
-![](./figures/cutouts.png)
-
-<img src="{{ site.baseurl }}/lecture/figures/cutouts.png" width="200" height="200" />
-
-{:refdef: style="text-align: center;"}
-![My Image]({{ site.baseurl }}/lecture/figures/cutouts.png)
-{: refdef}
+![](./figures/cutouts.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 As we get further away from the centre of the field, the sources become more distorted. This is a consequence of the phase screen. The additional phase introduced to a visibility with $w$ at position $(l, m)$ in the image is given by:
 
