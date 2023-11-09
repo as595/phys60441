@@ -95,7 +95,7 @@ where
  - $\chi$ is the *parallactic angle*, and
  - $Z$ is the *zenith angle*.
 
-<center><img src="{{site.baseurl}}/lecture/figures/coordinates.png" width="500" height="400" alt="The spherical geometry of the celestial frame compared with the local horizon frame"/></center>
+<center><img src="{{site.baseurl}}/lecture/figures/coordinates.png" width="600" height="400" alt="The spherical geometry of the celestial frame compared with the local horizon frame"/></center>
 
 These angles are defined by the relationship between the local coordinate frame and the celestial coordinate frame and can be defined as:
 
