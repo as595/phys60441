@@ -95,6 +95,8 @@ where
  - $\chi$ is the *parallactic angle*, and
  - $Z$ is the *zenith angle*.
 
+<center><img src="{{site.baseurl}}/lecture/figures/coordinates.png" width="500" height="400" alt="The spherical geometry of the celestial frame compared with the local horizon frame"/></center>
+
 These angles are defined by the relationship between the local coordinate frame and the celestial coordinate frame and can be defined as:
 
 $$ \tan \chi = \frac{\sin H}{\cos \delta \tan \phi - \tan \delta \cos H},$$
@@ -106,6 +108,8 @@ where
  - $H$ is the local *Hour Angle* of the celestial source,
  - $\delta$ is the *declination* of the celestial source, and
  - $\phi$ is the *latitude* of the telescope on the Earth.
+
+* Supporting material on [calculation of parallactic angle]().
 
 Using the expression $w = u \sin \chi \tan Z − v \cos \chi \tan Z$, we can re-write the visibility equation as
 
