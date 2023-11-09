@@ -62,11 +62,13 @@ However, the phase is *position-dependent*:
 
 $$\phi(l,m,w).$$
 
+The phase screen for a specific $w$-value is shown across a field-of-view in the below figure, with a random distribution of radio source positions indicated as dots.
+
 <center><img src="{{site.baseurl}}/lecture/figures/phasescreen.png" width="400" height="400" /></center>
 
 * See [Cornwell, Golap & Bhatnagar - EVLA Memo 67](https://library.nrao.edu/public/memos/evla/EVLAM_67.pdf).
 
-Effectively every visibility with a different $w$-value sees a different sky. And, since the $w$-value changes as a function of time, the measured sky is time-variable. 
+The effect is that every visibility with a different $w$-value sees a different sky. And, since the $w$-value changes as a function of time, the measured sky is time-variable. 
 
 Consequently, if we ignore the $w$-term and do a 2d Fourier transform then we will see image distortions. 
 
@@ -123,7 +125,7 @@ $$
 
 If we plot the offset of $(l', m')$ from $(l, m)$ as a function of $H$ and $\delta$, we can see that the values follow conic sections, and the offsets scale quadratically with distance from the phase centre, $r = \sqrt{l^2 + m^2}$, which means that sources further away move more. 
 
-<img src="{{site.baseurl}}/lecture/figures/conic_sections.png" width="500" height="400" class="center" alt="A figure showing the offset of positions in the warped coordinate frame as a function of hour angle and declination"/>
+<center><img src="{{site.baseurl}}/lecture/figures/conic_sections.png" width="500" height="400" alt="A figure showing the offset of positions in the warped coordinate frame as a function of hour angle and declination"/></center>
 
 * See the [Colab notebook used to make this figure.](https://colab.research.google.com/drive/1VuzOX6YrtHqgw8KR1KALhE4LmnvAI1TO?usp=sharing) 
 
