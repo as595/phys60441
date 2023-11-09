@@ -62,6 +62,10 @@ However, the phase is *position-dependent*:
 
 $$\phi(l,m,w).$$
 
+<img src="{{site.baseurl}}/lecture/figures/phasescreen.png" width="400" height="400" />
+
+* See [Cornwell, Golap & Bhatnagar - EVLA Memo 67](https://library.nrao.edu/public/memos/evla/EVLAM_67.pdf).
+
 Effectively every visibility with a different $w$-value sees a different sky. And, since the $w$-value changes as a function of time, the measured sky is time-variable. 
 
 Consequently, if we ignore the $w$-term and do a 2d Fourier transform then we will see image distortions. 
