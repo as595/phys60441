@@ -109,7 +109,8 @@ where
  - $\delta$ is the *declination* of the celestial source, and
  - $\phi$ is the *latitude* of the telescope on the Earth.
 
-* Supporting material on [calculation of parallactic angle]().
+
+* See supporting material on [calculation of parallactic angle]().
 
 Using the expression $w = u \sin \chi \tan Z − v \cos \chi \tan Z$, we can re-write the visibility equation as
 
