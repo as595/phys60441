@@ -111,6 +111,8 @@ The coordinates $(l', m')$ are a warped version of $(l, m)$.
 
 If we plot $(l', m')$ as a function of $H$ and $\delta$, we can see that the values follow conic sections. The values of $(l', m')$ scale quadratically with distance from the phase centre, $r = \sqrt{l^2 + m^2}$, which means that sources further away move more. 
 
+![image info](./figures/conic_sections.png)
+
 
 ### So how do we fix it?
 
