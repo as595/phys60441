@@ -67,7 +67,7 @@ Effectively every visibility with a different $w$-value sees a different sky. An
 Consequently, if we ignore the $w$-term and do a 2d Fourier transform then we will see image distortions. 
 
 <p align="center">
-  <img src="./figures/cutouts.png" />
+  <img src="{{ site.baseurl }}/figures/cutouts.png">
   <figcaption></figcaption>
 </p>
 
