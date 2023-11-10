@@ -192,8 +192,6 @@ For making an image from visibilities we need to go the other way - from visibil
 
 In practice most w-projection implementations do not calculate a w-kernel for every individual visibility. Typically the visibility data is ordered in increasing $w$-value and then divided into a number of $w$-planes. A kernel is then created for each plane, with a $w$-value that represents the mean $w$-position within that plane. The larger the number of $w$-planes, the more accurate the imaging will be - but also the more computationally expensive it will be...
 
-<center><img src="{{site.baseurl}}/lecture/figures/wincrease.png" width="600" height="200" /></center>
-
 If you are using CASA, the default number of w-planes is calculated using:
 
 $$
@@ -204,6 +202,8 @@ where
 
  - $B_{\rm max}$ is the maximum baseline length in units of kilo-$\lambda$, and
  - $\Omega$ is the field-of-view in units of square-arcminutes.
+
+<center><img src="{{site.baseurl}}/lecture/figures/wincrease.png" width="600" height="200" /></center>
 
 As $w$ increases, the size of the $w$-kernel also increases. Performing the convolution operation gets more expensive as the kernel gets larger, so CASA will look at the available memory on your computer and limit the size (“support”) of your $w$-kernels.
 
