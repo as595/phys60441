@@ -184,13 +184,15 @@ $$
 
 where $\tilde{G}(u, v, w)$ is the Fourier tranform of $G(l, m, w)$ and is known as the $w$-kernel.
 
-<center><img src="{{site.baseurl}}/lecture/figures/kernel.png" width="325" height="200" /></center>
+<center><img src="{{site.baseurl}}/lecture/figures/kernel.png" width="330" height="200" /></center>
 
 Mathematically this means that the visibility for non-zero $w$ can be calculated from the visibility for $w=0$, which is the same as projecting $V(u, v, w=0) \rightarrow V(u, v, w)$. Hence this method is known as $w$-projection.
 
 For making an image from visibilities we need to go the other way - from visibility data to images. In this case we need to project $V(u, v, w) \rightarrow V(u, v, w=0)$ in order to use the 2d Fourier transform. To do this we convolve $V(u,v,w)$ with the inverse of $G(u,v,w)$, which conveniently is just $G(u,v,-w)$.
 
 In practice most w-projection implementations do not calculate a w-kernel for every individual visibility. Typically the visibility data is ordered in increasing $w$-value and then divided into a number of $w$-planes. A kernel is then created for each plane, with a $w$-value that represents the mean $w$-position within that plane. The larger the number of $w$-planes, the more accurate the imaging will be - but also the more computationally expensive it will be...
+
+<center><img src="{{site.baseurl}}/lecture/figures/wincrease.png" width="600" height="200" /></center>
 
 If you are using CASA, the default number of w-planes is calculated using:
 
