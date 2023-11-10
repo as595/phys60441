@@ -184,7 +184,7 @@ $$
 
 where $\tilde{G}(u, v, w)$ is the Fourier tranform of $G(l, m, w)$ and is known as the $w$-kernel.
 
-<center><img src="{{site.baseurl}}/lecture/figures/kernel.png" width="340" height="200" /></center>
+<center><img src="{{site.baseurl}}/lecture/figures/kernel.png" width="350" height="200" /></center>
 
 Mathematically this means that the visibility for non-zero $w$ can be calculated from the visibility for $w=0$, which is the same as projecting $V(u, v, w=0) \rightarrow V(u, v, w)$. Hence this method is known as $w$-projection.
 
@@ -203,7 +203,7 @@ where
  - $B_{\rm max}$ is the maximum baseline length in units of kilo-$\lambda$, and
  - $\Omega$ is the field-of-view in units of square-arcminutes.
 
-<center><img src="{{site.baseurl}}/lecture/figures/wincrease.png" width="500" height="200" /></center>
+<center><img src="{{site.baseurl}}/lecture/figures/wincrease.png" width="450" height="200" /></center>
 
 As $w$ increases, the size of the $w$-kernel also increases. Performing the convolution operation gets more expensive as the kernel gets larger, so CASA will look at the available memory on your computer and limit the size (“support”) of your $w$-kernels.
 
