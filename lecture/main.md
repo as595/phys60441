@@ -46,6 +46,8 @@ which is just a 2d Fourier transform.
 
 However if $w(\sqrt{1-l^2-m^2}-1) \ge 1$ then we can't use a 2d Fourier transform without suffering from aberration effects. 
 
+* See [Cornwell & Perley 1992](https://articles.adsabs.harvard.edu/pdf/1992A%26A...261..353C)
+
 ### The w-effect
 
 So what happens if we do use a 2d transform?
