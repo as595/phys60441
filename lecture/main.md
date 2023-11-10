@@ -219,6 +219,8 @@ We can then stack, i.e. add-up, all of the re-projected images to form one combi
 
 Alternatively, rather than break the data up into time steps, we can instead break the sky image up into pieces - called facets - where each facet is small enough that $l^2 + m^2 \rightarrow 0$ and hence $w(\sqrt{1-l^2-m^2}-1) \ll 1$. 
 
+<center><img src="{{site.baseurl}}/lecture/figures/facets.png" width="400" height="400" /></center>
+
 We can then make a mosaic of all the individual images in order to recreate the full field-of-view. This approach is known as facetting. 
 
 ### Summary
